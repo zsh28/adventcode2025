@@ -1,4 +1,5 @@
 mod day1;
+mod day2;
 
 use clap::Parser;
 use std::fs;
@@ -39,6 +40,7 @@ fn main() {
     // Run the appropriate day
     match cli.day {
         1 => day1::solve(&input, cli.part2),
+        2 => day2::solve(&input, cli.part2),
         _ => eprintln!("Day {} not implemented yet", cli.day),
     }
 }
