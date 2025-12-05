@@ -1,6 +1,7 @@
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 use clap::Parser;
 use std::fs;
@@ -43,6 +44,7 @@ fn main() {
         1 => day1::solve(&input, cli.part2),
         2 => day2::solve(&input, cli.part2),
         3 => day3::solve(&input, cli.part2),
+        4 => day4::solve(&input, cli.part2),
         _ => eprintln!("Day {} not implemented yet", cli.day),
     }
 }
